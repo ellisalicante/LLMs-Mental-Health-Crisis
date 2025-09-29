@@ -1,0 +1,14 @@
+name: LLMHealth
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - openai
+  - datasets
+  - scikit-learn
+  - conda-forge::python-dotenv
+  - regex
+  - tabulate
+  - conda-forge::groq
+  - openpyxl
+  - statsmodels
