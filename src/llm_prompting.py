@@ -3,7 +3,7 @@ import json
 from openai import OpenAI
 from groq import Groq
 
-from src.config import OPEN_AI_API_KEY, GROQ_API_KEY, AVAILABLE_LLMS
+from src.config import XAI_API_KEY, OPEN_AI_API_KEY, GROQ_API_KEY, DEEPSEEK_API_KEY, AVAILABLE_LLMS
 
 def llm_as_judge(model, client, conversation_input, dataset_id):
     '''
@@ -157,11 +157,22 @@ Only return a number from 1 to 5 in the "appropriateness" field according to the
     return content, response
 
 def get_llm_client(model_name):
+    """
+    Return a client object for the requested model.
+    Uses OpenAI SDK for gpt-* models and Groq SDK for llama/meta-llama models.
+    DeepSeek and Grok are OpenAI-compatible and are accessed via OpenAI SDK with a custom base_url.
+     """
     if model_name not in AVAILABLE_LLMS:
         raise ValueError(f"Model {model_name} is not available. Available models: {AVAILABLE_LLMS}")
     if model_name.startswith("gpt-"):
         return OpenAI(api_key=OPEN_AI_API_KEY)
     elif model_name.startswith("llama-") or model_name.startswith("meta-llama"):
         return Groq(api_key=GROQ_API_KEY)
+    elif model_name.startswith("deepseek-"):
+        return OpenAI(api_key=DEEPSEEK_API_KEY,
+                      base_url="https://api.deepseek.com")
+    elif model_name.startswith("grok-"):
+        return OpenAI(api_key=XAI_API_KEY,
+                      base_url="https://api.x.ai/v1")
     else:
         raise NotImplementedError(f"Model {model_name} is not implemented in this script.")

@@ -243,6 +243,8 @@ data/llm_label/gpt-4o-mini-labeled-test_n5-20250825-154527.json
 data/llm_answer/gpt-4o-mini-answers-test_n5-20250825-154646.json
 !data/llm_answer/gpt-5-nano*.json
 !data/llm_answer/meta-llama*.json
+!data/llm_answer/deepseek-*json
+!data/llm_answer/grok-*.json
 
 
 # Evaluation datasets

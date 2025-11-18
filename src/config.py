@@ -3,7 +3,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
-GROQ_API_KEY = os.getenv("GROK_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+XAI_API_KEY = os.getenv("XAI_API_KEY")
 
 LABELS = {
     "suicidal_ideation",
@@ -37,7 +39,11 @@ CUSTOM_SAMPLE_SIZES = {
 # Set default number of conversations to get per dataset WHEN MERGING
 DEFAULT_N = 5 
 
-AVAILABLE_LLMS = {"gpt-4o-mini", "gpt-5-nano", "meta-llama/Llama-4-Scout-17B-16E-Instruct"} #gpt-3.5-turbo, llama-3.3-70b-versatile, 
+AVAILABLE_LLMS = {"gpt-4o-mini",
+                  "gpt-5-nano",
+                  "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+                  "deepseek-chat",
+                  "grok-4-fast-non-reasoning"} #gpt-3.5-turbo, llama-3.3-70b-versatile, 
 
 IND_DATASETS_DIR = "data/raw"
 MERGED_DATASET_DIR = "data/processed"

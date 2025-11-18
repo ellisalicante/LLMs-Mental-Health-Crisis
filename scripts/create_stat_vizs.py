@@ -52,6 +52,8 @@ MODEL_NAME_MAP = {
     "meta-llama-Llama-4-Scout-17B-16E-Instruct-answers-sampled": "llama-4-Scout",
     "gpt-5-nano-answers-sampled": "gpt-5-nano",
     "gpt-4o-mini-answers-sampled": "gpt-4o-mini",
+     "grok-4-fast-non-reasoning-answers-sampled": "grok-4-fast",
+     "deepseek-chat-answers-sampled": "deepseek-v3.2",
 }
 # Optional: pretty names + order for labels
 LABEL_NAME_MAP = {
