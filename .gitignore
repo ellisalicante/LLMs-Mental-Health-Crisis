@@ -243,23 +243,31 @@ data/llm_label/gpt-4o-mini-labeled-test_n5-20250825-154527.json
 data/llm_answer/gpt-4o-mini-answers-test_n5-20250825-154646.json
 !data/llm_answer/gpt-5-nano*.json
 !data/llm_answer/meta-llama*.json
-!data/llm_answer/deepseek-*json
+!data/llm_answer/deepseek-chat*.json
 !data/llm_answer/grok-*.json
 
 
 # Evaluation datasets
 # - [n=200 x3its x3 models] x3its with 4o-mini as judge - 27
 # - [n=2000 x3its x3 models] x3its with 4o-mini as judge - 27
-!data/llm_evaluator/n_200/*.json
-!data/llm_evaluator/n_2000/*.json
+# -!data/llm_evaluator/n_200/*.json
+# -!data/llm_evaluator/n_2000/*.json
+!data/llm_evaluator/gpt-4o-mini/**/*.json
+!data/llm_evaluator/gpt-5-nano/**/*.json
+!data/llm_evaluator/meta-llama/**/*.json
 
 # Merged evaluation datasets
 # - n=2000 x3 models x3its with 4o-mini as judge - 9
-!data/llm_evaluator/n_200/merged/*.json
-!data/llm_evaluator/n_2000/merged/*.json
+# - !data/llm_evaluator/n_200/merged/*.json
+# - !data/llm_evaluator/n_2000/merged/*.json
 
-
+# Sampled evaluations
+!data/llm_evaluator/sampled/*.json
 
 outputs/*
 !outputs/evaluation_by_label.csv
 !outputs/evaluation_summary.csv
+!outputs/crisis_label_agreement
+!outputs/crisis_label_agreement/summaries
+!outputs/appropriateness_agreement
+outputs/crisis_label_agreement/pairs

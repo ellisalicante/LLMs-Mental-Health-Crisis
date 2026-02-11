@@ -1,0 +1,8 @@
+label,confused_with,probability,support
+anxiety_crisis,no_crisis,0.424310216256525,1341
+no_crisis,anxiety_crisis,0.0912106135986733,3015
+risk_taking_behaviours,no_crisis,0.5213675213675214,351
+self-harm,no_crisis,0.09339774557165861,621
+substance_abuse_or_withdrawal,no_crisis,0.035897435897435895,585
+suicidal_ideation,no_crisis,0.08412698412698413,1260
+violent_thoughts,no_crisis,0.24279835390946503,243
