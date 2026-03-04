@@ -1,16 +1,38 @@
 # Between Help and Harm: An Evaluation of Mental Health Crisis Handling by LLMs
 
+This repository contains the code for the paper "[Between Help and Harm: An Evaluation of Mental Health Crisis Handling by LLMs](https://preprints.jmir.org/preprint/88435)" by Adrian Arnaiz-Rodriguez, Miguel Baidal, Erik Derner, Jenn Layton Annable, Mark Ball, Mark Ince, Elvira Perez Vallejos and Nuria Oliver.
+
+Accepted at [JMIR Mental Health (March, 2026)](https://preprints.jmir.org/preprint/88435). Please cite the paper if you use this code or dataset in your research:
+
+```bibtex
+@article{arnaiz2026between,
+  author = {Arnaiz-Rodriguez, Adrian and Baidal, M. and Derner, E. and Annable, J. L. and Ball, M. and Ince, M. and Perez Vallejos, E. and Oliver, N.},
+  title = {Between Help and Harm: An Evaluation of Mental Health Crisis Handling by {LLMs}},
+  journal = {JMIR Mental Health},
+  year = {2026},
+  volume = {forthcoming},
+  pages = {88435},
+  doi = {10.2196/88435},
+  url = {https://preprints.jmir.org/preprint/88435},
+  note = {In press}
+}
+```
+
+---
+
+**Visual Abstract**
+
 ![Pipeline of the project](llms-mh.png)
 
+**Content:**
 
-- [LLMs Mental Health Crisis Response](#llms-mental-health-crisis-response)
-  - [Datasets](#datasets)
-    - [Dataset Directory structure](#dataset-directory-structure)
-    - [Dataset summary](#dataset-summary)
-    - [In-Depth Description of Each Folder](#in-depth-description-of-each-folder)
-  - [Code Structure and Reproducibility of Dataset Creation](#code-structure-and-reproducibility-of-dataset-creation)
-    - [Summary](#summary)
-    - [Extended](#extended)
+- [Datasets](#datasets)
+  - [Dataset Directory structure](#dataset-directory-structure)
+  - [Dataset summary](#dataset-summary)
+  - [In-Depth Description of Each Folder](#in-depth-description-of-each-folder)
+- [Code Structure and Reproducibility of Dataset Creation](#code-structure-and-reproducibility-of-dataset-creation)
+  - [Summary](#summary)
+  - [Extended](#extended)
 
 
 ## Datasets
