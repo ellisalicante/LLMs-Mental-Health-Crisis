@@ -1,7 +1,7 @@
 # Between Help and Harm: An Evaluation of Mental Health Crisis Handling by LLMs
 
 [![Collection on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-md.svg)](https://huggingface.co/collections/arnaiztech/llm-mental-health-crisis)
-[![JMIR Mental Health](https://img.shields.io/badge/JMIR%20Mental%20Health-10.2196%2F88435-0A7DB8)]([https://doi.org/10.2196/88435](https://preprints.jmir.org/preprint/88435))
+[![JMIR Mental Health](https://img.shields.io/badge/JMIR%20Mental%20Health-10.2196%2F88435-0A7DB8)](https://preprints.jmir.org/preprint/88435)
 [![arXiv](https://img.shields.io/badge/arXiv-2509.24857-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.24857)
 
 
