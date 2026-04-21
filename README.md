@@ -1,8 +1,11 @@
 # Between Help and Harm: An Evaluation of Mental Health Crisis Handling by LLMs
 
-This repository contains the code for the paper "[Between Help and Harm: An Evaluation of Mental Health Crisis Handling by LLMs](https://preprints.jmir.org/preprint/88435)" by Adrian Arnaiz-Rodriguez, Miguel Baidal, Erik Derner, Jenn Layton Annable, Mark Ball, Mark Ince, Elvira Perez Vallejos and Nuria Oliver.
+[![Collection on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/dataset-on-hf-md.svg)](https://huggingface.co/collections/arnaiztech/llm-mental-health-crisis)
+[![JMIR Mental Health](https://img.shields.io/badge/JMIR%20Mental%20Health-10.2196%2F88435-0A7DB8)]([https://doi.org/10.2196/88435](https://preprints.jmir.org/preprint/88435))
+[![arXiv](https://img.shields.io/badge/arXiv-2509.24857-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.24857)
 
-Accepted at [JMIR Mental Health (March, 2026)](https://preprints.jmir.org/preprint/88435). Please cite the paper if you use this code or dataset in your research:
+
+This repository contains the code for the paper "[Between Help and Harm: An Evaluation of Mental Health Crisis Handling by LLMs](https://preprints.jmir.org/preprint/88435)" by *Adrian Arnaiz-Rodriguez, Miguel Baidal, Erik Derner, Jenn Layton Annable, Mark Ball, Mark Ince, Elvira Perez Vallejos* and *Nuria Oliver*. Accepted at [JMIR Mental Health (March, 2026)](https://preprints.jmir.org/preprint/88435). Please cite the paper if you use this code or dataset in your research:
 
 ```bibtex
 @article{arnaiz2026between,
@@ -36,6 +39,14 @@ Accepted at [JMIR Mental Health (March, 2026)](https://preprints.jmir.org/prepri
 
 
 ## Datasets
+
+For easier access, the datasets are also available on Hugging Face.
+
+- **Collection:** [arnaiztech/llm-mental-health-crisis](https://huggingface.co/collections/arnaiztech/llm-mental-health-crisis)
+  - **Benchmark dataset:** validation/test conversations + human/LLM crisis labels  
+  - **Responses + evaluations:** model responses + human appropriateness scores + LLM evaluator judgments
+
+The files in `data/` remain the original repository copies; the Hugging Face versions are provided for simpler access and loading.
 
 ### Dataset Directory structure
 
